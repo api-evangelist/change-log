@@ -1,6 +1,6 @@
 [{
 	"name": "Change Log",
-	"description": "",
+	"description": "A change log is a critical building block for helping build and keep trust with API consumers. It is about providing enough information as you can about what has changed with the platform. This research tracks on how companies are employing and communicating around their API. I'm aggregating the information, as well as deploying an API to help organize my change log across my projects, as well as share with everyone here.",
 	"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-recycling.jpg",
 	"x-open-ranking": "0",
 	"tags": ["Change Log"],
