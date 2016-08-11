@@ -1,24 +1,21 @@
-[{
+{
 	"name": "Change Log",
-	"description": "A change log is a critical building block for helping build and keep trust with API consumers. It is about providing enough information as you can about what has changed with the platform. This research tracks on how companies are employing and communicating around their API. I'm aggregating the information, as well as deploying an API to help organize my change log across my projects, as well as share with everyone here.",
+	"description": "",
 	"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-recycling.jpg",
 	"x-open-ranking": "0",
 	"tags": ["Change Log"],
-	"created": "2016-04-03",
-	"modified": "2016-04-03",
-	"url": "http://change-log.apievangelist.com"
+	"created": "2016-08-10",
+	"modified": "2016-08-10",
+	"url": "http://change-log.apievangelist.com",
 	"specificationVersion": "0.14",
 	"apis": [{
 		"name": "API Evangelist Change Log API",
-		"description": "<p>A change log is a critical building block for helping build and keep trust with API consumers. It is about providing enough information as you can about what has changed with the platform. This research tracks on how companies are employing and communicating around their API. I'm aggregating the information, as well as deploying an API to help organize my change log across my projects, as well as share with everyone here.</p>",
+		"description": "",
 		"image": "https://s3.amazonaws.com/kinlane-productions/api-evangelist/t-shirts/KL_InApiWeTrust-1000.png",
 		"humanURL": "",
 		"baseURL": "http://api.apievangelist.com",
 		"tags": ["Change Log"],
-		"properties": [{
-			"type": "x-openapi-spec",
-			"url": "api-commons/openapi-spec.json"
-		}]
+		"properties": []
 	}],
 	"x-common": [{
 		"type": "x-base-url-for-api",
@@ -73,10 +70,6 @@
 		"url": "privacy-policy/"
 	},
 	{
-		"type": "x-road-map",
-		"url": "road-map/"
-	},
-	{
 		"type": "x-selfservice-registration",
 		"url": "https://apievangelist.3scale.net/signup"
 	},
@@ -96,13 +89,10 @@
 		"type": "x-twitter",
 		"url": "https://twitter.com/apievangelist"
 	}],
-	"include": [{
-		"name": "Parent",
-		"url": "http://change-log.apievangelist.com/apis.yaml"
-	}],
+	"include": [],
 	"maintainers": [{
 		"FN": "Kin Lane",
 		"x-twitter": "apievangelist",
 		"email": "info@apievangelist.com"
 	}]
-}]
+}
