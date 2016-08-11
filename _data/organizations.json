@@ -42,9 +42,9 @@
 		"base_url": "https://data.crunchbase.com/",
 		"blog": "http://blog.crunchbase.com",
 		"blogrss": "http://crunchbaseblog.golaun.ch/feed/",
-		"logo": "",
-		"logo_width": "0",
-		"screenshot": "",
+		"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/crunchbase.png",
+		"logo_width": "150",
+		"screenshot": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/crunchbase.png",
 		"tags": [
 			"Silicon Valley",
 			"My API Stack",
