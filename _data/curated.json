@@ -48,14 +48,6 @@
 		"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/www-apichangelog-comapisharesight.png"
 	},
 	{
-		"curated_id": "wuqvKHmqOqGaR7eja701kqJj9JqB2lObO116szPvn1V116Idh7ub7EK0297ndGxJ116O2Kh4vDElH5nxxzFmnJL6pY7Q117117",
-		"item_date": "0000-00-00 00:00:00",
-		"title": "What039s dat It039s like Git for data  The Changelog",
-		"url": "https://changelog.com/dat-is-like-git-for-data/",
-		"domain": "changelog.com",
-		"image": ""
-	},
-	{
 		"curated_id": "t2w2talo9W1xjmJ123gb116HE0oY3Eka3Telv47mcwP2tb4HSvtxXPps24QowERnXE5DSELq116gDPiELtyj1ccJiKtA117117",
 		"item_date": "2015-09-09 09:17:58",
 		"title": "Improving Developer Experience With 3scale Partner API Changelog",
@@ -78,45 +70,5 @@
 		"url": "http://keenio.tumblr.com/post/117554455526/we-have-a-changelog",
 		"domain": "keenio.tumblr.com",
 		"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/keenio-tumblr-compost117554455526we-have-a-changelog_=_.png"
-	},
-	{
-		"curated_id": "Og4NNgTT0TG2FopwNdjwRq1gmaHc116N6iDRMeB4xxEz6BkrTyeTK7gTdTxhY0IIPP2ffF4gZL8V4rieMdd6GxtQ117117",
-		"item_date": "2014-07-17 00:00:00",
-		"title": "API Changelog Aims to Reduce Risk to API Consumer Business Models",
-		"url": "http://apiscene.com/out",
-		"domain": "apiscene.com",
-		"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/apiscene-comout.png"
-	},
-	{
-		"curated_id": "ivUEUPNl45gHCykRSF6nxSRRxafEACQzH116rGEQ3r3GCnk6g123VtqxIxxOy5c123uWgLSheoDaC3aMmMq6yM4AHvdQ117117",
-		"item_date": "2013-07-14 00:00:00",
-		"title": "API Changelog API Documentation Change Notifications",
-		"url": "https://www.apichangelog.com/",
-		"domain": "www.apichangelog.com",
-		"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/www-apichangelog-com.png"
-	},
-	{
-		"curated_id": "nyH4YJJSLsU4dvsfFqCIU0CJlIr123W116GQ8rqjv8IPmUIyODxIchG1239z4FSs68iOHzDeNQMeLUWtmsSw8TnEsr1A117117",
-		"item_date": "2013-07-14 00:00:00",
-		"title": "API Changelog API Documentation Change Notifications",
-		"url": "http://john-sheehan.com/post/55483345633",
-		"domain": "john-sheehan.com",
-		"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/john-sheehan-compost55483345633.png"
-	},
-	{
-		"curated_id": "jq1UC0NXmB1231n0PK1239Lrhk0xwFPSL116IuR116mEuq1F0U5Wmt6Z5KvMEea6S4pTrPZIi1SEHBwq123sgCn0KKU5ScKA117117",
-		"item_date": "2013-07-11 00:00:00",
-		"title": "Follow the APIs you care about with Runscopes latest community project API Changelog",
-		"url": "http://blog.runscope.com/posts/api-changelog",
-		"domain": "blog.runscope.com",
-		"image": "http://kinlane-productions.s3.amazonaws.com/ap-evangelist-site/curated/screenshots/blog-runscope-compostsapi-changelog.png"
-	},
-	{
-		"curated_id": "HOzKuN4mY7Av6116FDvjKB47R9u91S5lIV7z4r123gMBFXhmq9ewjXWdKR5MStrxSK9aLy1123qVScCgYje5tfQKXxOw117117",
-		"item_date": "2013-03-04 17:42:38",
-		"title": "The City of Chicago is on Github  The Changelog",
-		"url": "https://changelog.com/the-city-of-chicago-is-on-github/",
-		"domain": "changelog.com",
-		"image": "http://kinlane-productions.s3.amazonaws.com/ap-evangelist-site/curated/screenshots/9352_api500_com.png"
 	}
 ]
