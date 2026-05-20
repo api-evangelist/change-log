@@ -1,0 +1,315 @@
+vocabulary: "1.0.0"
+
+info:
+  provider: Change Log
+  description: Vocabulary for the change-log topic, covering customer-facing changelog publishing platforms, API specification diff tools, release notes feeds, and deprecation tracking.
+  created: '2026-05-19'
+  modified: '2026-05-19'
+
+operational:
+  apis:
+    - name: LaunchNotes
+      namespace: launchnotes
+      status: active
+    - name: AnnounceKit
+      namespace: announcekit
+      status: active
+    - name: Beamer
+      namespace: beamer
+      status: active
+    - name: Canny
+      namespace: canny
+      status: active
+    - name: Oasdiff
+      namespace: oasdiff
+      status: active
+    - name: Optic
+      namespace: optic
+      status: active
+    - name: Bump.sh
+      namespace: bump-sh
+      status: active
+    - name: Linear
+      namespace: linear
+      status: active
+
+  resources:
+    - name: entries
+      description: Individual customer-facing changelog entries published through a changelog platform
+      actions:
+        - list
+        - get
+        - create
+        - update
+        - publish
+        - archive
+    - name: feeds
+      description: Aggregated feeds (RSS, Atom, JSON Feed) of changelog entries for a project or product
+      actions:
+        - list
+        - get
+        - subscribe
+    - name: releases
+      description: Versioned releases grouping one or more changelog entries
+      actions:
+        - list
+        - get
+        - create
+    - name: api-changes
+      description: Machine-readable API specification changes detected by spec-diff tools
+      actions:
+        - list
+        - get
+        - diff
+    - name: deprecations
+      description: Tracked deprecation announcements with sunset dates and replacement guidance
+      actions:
+        - list
+        - get
+        - create
+    - name: subscribers
+      description: Users or systems subscribed to a changelog feed for notifications
+      actions:
+        - list
+        - create
+        - delete
+    - name: widgets
+      description: In-app changelog widgets embedded in product UIs
+      actions:
+        - get
+        - configure
+
+  actions:
+    - name: list
+      description: Enumerate resources
+      httpMethod: GET
+      pattern: read
+    - name: get
+      description: Retrieve a single resource
+      httpMethod: GET
+      pattern: read
+    - name: create
+      description: Create a new resource such as an entry or release
+      httpMethod: POST
+      pattern: write
+    - name: update
+      description: Update an existing entry, release, or deprecation
+      httpMethod: PUT
+      pattern: write
+    - name: publish
+      description: Move a draft or scheduled entry into the published state
+      httpMethod: POST
+      pattern: write
+    - name: archive
+      description: Archive a previously published entry without deleting it
+      httpMethod: POST
+      pattern: write
+    - name: subscribe
+      description: Subscribe a user or system to a changelog feed
+      httpMethod: POST
+      pattern: write
+    - name: diff
+      description: Compute a diff between two API specification versions
+      httpMethod: POST
+      pattern: query
+    - name: configure
+      description: Configure a widget or feed
+      httpMethod: PUT
+      pattern: write
+    - name: delete
+      description: Remove a resource
+      httpMethod: DELETE
+      pattern: destructive
+
+  schemas:
+    core:
+      - name: ChangelogEntry
+        description: A single customer-facing changelog entry
+        properties:
+          - id
+          - title
+          - body
+          - category
+          - tags
+          - audience
+          - publish_status
+          - published_at
+          - url
+          - release_version
+          - channels
+      - name: APIChange
+        description: A machine-readable API specification change detected between two versions
+        properties:
+          - id
+          - api_id
+          - change_type
+          - severity
+          - scope
+          - path
+          - method
+          - from_version
+          - to_version
+          - tool
+          - changelog_entry_id
+      - name: Release
+        description: A versioned release grouping one or more changelog entries
+        properties:
+          - id
+          - version
+          - released_at
+          - entries
+
+  enums:
+    entry_categories:
+      - Added
+      - Changed
+      - Deprecated
+      - Removed
+      - Fixed
+      - Security
+      - Announcement
+    change_types:
+      - added
+      - removed
+      - modified
+      - deprecated
+      - renamed
+    change_severities:
+      - breaking
+      - non-breaking
+      - informational
+    change_scopes:
+      - endpoint
+      - operation
+      - parameter
+      - schema
+      - response
+      - security
+      - server
+      - info
+    publish_statuses:
+      - draft
+      - scheduled
+      - published
+      - archived
+    channels:
+      - in-app-widget
+      - email
+      - rss
+      - atom
+      - json-feed
+      - slack
+      - webhook
+      - developer-portal
+    diff_tools:
+      - oasdiff
+      - optic
+      - openapi-diff
+      - bump-sh
+      - redocly
+      - swagger-diff
+
+capability:
+  workflows:
+    - name: Public API Changelog Publishing
+      description: Draft, review, and publish customer-facing changelog entries to a public changelog feed and developer portal
+      apis:
+        - launchnotes
+        - announcekit
+        - bump-sh
+      personas:
+        - Developer Advocate
+        - Product Manager
+      domains:
+        - Changelog Publishing
+    - name: Automated Breaking-Change Detection
+      description: Diff successive OpenAPI specifications in CI to detect breaking changes and emit machine-readable change records
+      apis:
+        - oasdiff
+        - optic
+        - bump-sh
+      personas:
+        - API Engineer
+      domains:
+        - Spec Diff
+    - name: In-App Release Announcements
+      description: Push new changelog entries through embedded in-app widgets to notify end users of new features
+      apis:
+        - beamer
+        - announcekit
+        - chameleon
+      personas:
+        - Product Manager
+      domains:
+        - Product Updates
+    - name: Deprecation Lifecycle Management
+      description: Track API deprecations from announcement through sunset, publishing notices to changelogs and developer portals
+      apis:
+        - launchnotes
+        - bump-sh
+      personas:
+        - API Engineer
+        - Developer Advocate
+      domains:
+        - API Versioning
+
+  personas:
+    - id: developer-advocate
+      name: Developer Advocate
+      description: Communicates API changes, releases, and deprecations to external developer audiences
+      workflows:
+        - Public API Changelog Publishing
+        - Deprecation Lifecycle Management
+    - id: product-manager
+      name: Product Manager
+      description: Owns product release communication across in-app, email, and changelog channels
+      workflows:
+        - Public API Changelog Publishing
+        - In-App Release Announcements
+    - id: api-engineer
+      name: API Engineer
+      description: Authors API specifications and ensures version changes are tracked and communicated
+      workflows:
+        - Automated Breaking-Change Detection
+        - Deprecation Lifecycle Management
+
+  domains:
+    - name: Changelog Publishing
+      description: Customer-facing changelog publishing workflows and platforms
+    - name: Spec Diff
+      description: Machine-readable diffing of API specifications across versions
+    - name: Product Updates
+      description: In-app and multi-channel communication of product feature updates
+    - name: API Versioning
+      description: Tracking API versions, deprecations, and sunset lifecycles
+
+crossReference:
+  - resource: entries
+    operations:
+      - list
+      - create
+      - publish
+    workflows:
+      - Public API Changelog Publishing
+      - In-App Release Announcements
+    personas:
+      - Developer Advocate
+      - Product Manager
+  - resource: api-changes
+    operations:
+      - list
+      - get
+      - diff
+    workflows:
+      - Automated Breaking-Change Detection
+    personas:
+      - API Engineer
+  - resource: deprecations
+    operations:
+      - list
+      - create
+    workflows:
+      - Deprecation Lifecycle Management
+    personas:
+      - API Engineer
+      - Developer Advocate

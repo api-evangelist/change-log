@@ -1,0 +1,22 @@
+{
+  "id": "entry_2026_05_19_payments",
+  "title": "New Subscriptions endpoint and updated webhook payload",
+  "slug": "subscriptions-endpoint-webhook-update",
+  "body": "We've added a new `POST /v1/subscriptions` endpoint for creating recurring billing subscriptions. The `invoice.created` webhook payload now also includes a `customer_email` field.",
+  "category": "Added",
+  "tags": ["API", "Payments", "Webhooks"],
+  "audience": ["developer", "admin"],
+  "publish_status": "published",
+  "published_at": "2026-05-19T15:00:00Z",
+  "updated_at": "2026-05-19T15:30:00Z",
+  "url": "https://example.com/changelog/subscriptions-endpoint-webhook-update",
+  "feed_url": "https://example.com/changelog/feed.json",
+  "release_version": "2026-05-19",
+  "related_api_changes": [
+    "change_subscriptions_endpoint_added",
+    "change_invoice_webhook_customer_email_added"
+  ],
+  "channels": ["in-app-widget", "email", "rss", "developer-portal"],
+  "author": "Jane Doe",
+  "platform": "LaunchNotes"
+}

@@ -1,0 +1,120 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/change-log/refs/heads/main/json-schema/change-log-changelog-entry-schema.json",
+  "title": "ChangelogEntry",
+  "description": "A single customer-facing changelog entry describing one release, announcement, or update published through a changelog platform.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Stable identifier for the changelog entry.",
+      "example": "entry_2026_05_19_payments"
+    },
+    "title": {
+      "type": "string",
+      "description": "Short headline describing the change.",
+      "example": "New Subscriptions endpoint and updated webhook payload"
+    },
+    "slug": {
+      "type": "string",
+      "description": "URL-safe slug for the changelog entry.",
+      "example": "subscriptions-endpoint-webhook-update"
+    },
+    "body": {
+      "type": "string",
+      "description": "Full body of the changelog entry. Typically Markdown.",
+      "example": "We've added a new `/v1/subscriptions` endpoint and added a `customer_email` field to the `invoice.created` webhook payload."
+    },
+    "category": {
+      "type": "string",
+      "enum": ["Added", "Changed", "Deprecated", "Removed", "Fixed", "Security", "Announcement"],
+      "description": "Keep-a-Changelog style category for the entry.",
+      "example": "Added"
+    },
+    "tags": {
+      "type": "array",
+      "description": "Tags categorizing the entry by product area, audience, or surface.",
+      "items": { "type": "string" },
+      "example": ["API", "Payments", "Webhooks"]
+    },
+    "audience": {
+      "type": "array",
+      "description": "Audiences this entry is targeted at.",
+      "items": {
+        "type": "string",
+        "enum": ["developer", "end-user", "admin", "partner", "internal"]
+      },
+      "example": ["developer", "admin"]
+    },
+    "publish_status": {
+      "type": "string",
+      "enum": ["draft", "scheduled", "published", "archived"],
+      "description": "Publication state of the changelog entry.",
+      "example": "published"
+    },
+    "published_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Timestamp when the entry was made public.",
+      "example": "2026-05-19T15:00:00Z"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Timestamp when the entry was last modified.",
+      "example": "2026-05-19T15:30:00Z"
+    },
+    "url": {
+      "type": "string",
+      "format": "uri",
+      "description": "Public URL where the entry can be read.",
+      "example": "https://example.com/changelog/subscriptions-endpoint-webhook-update"
+    },
+    "feed_url": {
+      "type": "string",
+      "format": "uri",
+      "description": "URL of the changelog feed (RSS, Atom, or JSON) the entry belongs to.",
+      "example": "https://example.com/changelog/feed.json"
+    },
+    "release_version": {
+      "type": "string",
+      "description": "Semantic version or release identifier associated with the entry.",
+      "example": "2026-05-19"
+    },
+    "related_api_changes": {
+      "type": "array",
+      "description": "References to underlying API changes documented in machine-readable diffs.",
+      "items": { "type": "string" },
+      "example": ["api_change_subscriptions_added", "api_change_invoice_payload_v2"]
+    },
+    "deprecation": {
+      "type": "object",
+      "description": "Deprecation metadata when the entry announces a deprecation.",
+      "properties": {
+        "deprecated_resource": { "type": "string", "example": "/v1/charges" },
+        "sunset_date": { "type": "string", "format": "date", "example": "2027-01-01" },
+        "replacement_resource": { "type": "string", "example": "/v1/payment_intents" }
+      }
+    },
+    "channels": {
+      "type": "array",
+      "description": "Distribution channels this entry was pushed through.",
+      "items": {
+        "type": "string",
+        "enum": ["in-app-widget", "email", "rss", "atom", "json-feed", "slack", "webhook", "developer-portal"]
+      },
+      "example": ["in-app-widget", "email", "rss"]
+    },
+    "author": {
+      "type": "string",
+      "description": "Author who published the changelog entry.",
+      "example": "Jane Doe"
+    },
+    "platform": {
+      "type": "string",
+      "description": "Changelog platform that produced this entry.",
+      "example": "LaunchNotes"
+    }
+  },
+  "required": ["id", "title", "category", "publish_status", "published_at"]
+}

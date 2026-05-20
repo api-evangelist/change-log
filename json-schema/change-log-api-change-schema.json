@@ -1,0 +1,98 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/change-log/refs/heads/main/json-schema/change-log-api-change-schema.json",
+  "title": "APIChange",
+  "description": "A single machine-readable API change detected between two versions of an API specification by a spec-diff or change-tracking tool.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Stable identifier for the API change.",
+      "example": "change_subscriptions_endpoint_added"
+    },
+    "api_id": {
+      "type": "string",
+      "description": "Identifier of the API the change applies to.",
+      "example": "payments-api"
+    },
+    "change_type": {
+      "type": "string",
+      "enum": ["added", "removed", "modified", "deprecated", "renamed"],
+      "description": "Kind of change being recorded.",
+      "example": "added"
+    },
+    "severity": {
+      "type": "string",
+      "enum": ["breaking", "non-breaking", "informational"],
+      "description": "Whether the change breaks existing consumers.",
+      "example": "non-breaking"
+    },
+    "scope": {
+      "type": "string",
+      "enum": ["endpoint", "operation", "parameter", "schema", "response", "security", "server", "info"],
+      "description": "Part of the API specification affected.",
+      "example": "endpoint"
+    },
+    "path": {
+      "type": "string",
+      "description": "OpenAPI path or JSON pointer to the affected element.",
+      "example": "/v1/subscriptions"
+    },
+    "method": {
+      "type": "string",
+      "enum": ["GET", "POST", "PUT", "PATCH", "DELETE", "HEAD", "OPTIONS", "TRACE"],
+      "description": "HTTP method when the change applies to an operation.",
+      "example": "POST"
+    },
+    "from_version": {
+      "type": "string",
+      "description": "API specification version before the change.",
+      "example": "2026-04-15"
+    },
+    "to_version": {
+      "type": "string",
+      "description": "API specification version after the change.",
+      "example": "2026-05-19"
+    },
+    "description": {
+      "type": "string",
+      "description": "Human-readable description of the change.",
+      "example": "Added new POST /v1/subscriptions endpoint to create recurring billing subscriptions."
+    },
+    "diff": {
+      "type": "object",
+      "description": "Structured diff payload as emitted by the spec-diff tool.",
+      "properties": {
+        "before": { "description": "Element value before the change." },
+        "after": { "description": "Element value after the change." }
+      }
+    },
+    "tool": {
+      "type": "string",
+      "description": "Tool that produced the diff record.",
+      "enum": ["oasdiff", "optic", "openapi-diff", "bump-sh", "redocly", "swagger-diff", "other"],
+      "example": "oasdiff"
+    },
+    "detected_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Timestamp when the change was detected.",
+      "example": "2026-05-19T14:55:00Z"
+    },
+    "changelog_entry_id": {
+      "type": "string",
+      "description": "Identifier of the customer-facing changelog entry that documents this change.",
+      "example": "entry_2026_05_19_payments"
+    },
+    "deprecation": {
+      "type": "object",
+      "description": "Deprecation metadata when change_type is 'deprecated'.",
+      "properties": {
+        "sunset_date": { "type": "string", "format": "date", "example": "2027-01-01" },
+        "deprecation_header": { "type": "string", "example": "Deprecation: Thu, 01 Jan 2027 00:00:00 GMT" },
+        "replacement_path": { "type": "string", "example": "/v1/payment_intents" }
+      }
+    }
+  },
+  "required": ["id", "api_id", "change_type", "severity", "scope", "from_version", "to_version"]
+}

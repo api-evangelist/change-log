@@ -1,0 +1,125 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "cl": "https://api-evangelist.github.io/change-log/schema/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcat": "https://www.w3.org/ns/dcat#",
+
+    "ChangelogEntry": "cl:ChangelogEntry",
+    "APIChange": "cl:APIChange",
+    "Release": "schema:CreativeWork",
+
+    "id": "@id",
+    "title": "schema:headline",
+    "slug": {
+      "@id": "cl:slug",
+      "@type": "xsd:string"
+    },
+    "body": "schema:articleBody",
+    "description": "schema:description",
+    "name": "schema:name",
+    "author": "schema:author",
+
+    "category": {
+      "@id": "cl:category",
+      "@type": "xsd:string"
+    },
+    "tags": {
+      "@id": "dcat:keyword",
+      "@container": "@set",
+      "@type": "xsd:string"
+    },
+    "audience": {
+      "@id": "schema:audience",
+      "@container": "@set",
+      "@type": "xsd:string"
+    },
+    "publish_status": {
+      "@id": "cl:publish_status",
+      "@type": "xsd:string"
+    },
+    "published_at": {
+      "@id": "schema:datePublished",
+      "@type": "xsd:dateTime"
+    },
+    "updated_at": {
+      "@id": "schema:dateModified",
+      "@type": "xsd:dateTime"
+    },
+    "detected_at": {
+      "@id": "cl:detected_at",
+      "@type": "xsd:dateTime"
+    },
+    "url": {
+      "@id": "schema:url",
+      "@type": "@id"
+    },
+    "feed_url": {
+      "@id": "cl:feed_url",
+      "@type": "@id"
+    },
+    "release_version": {
+      "@id": "schema:version",
+      "@type": "xsd:string"
+    },
+    "from_version": {
+      "@id": "cl:from_version",
+      "@type": "xsd:string"
+    },
+    "to_version": {
+      "@id": "cl:to_version",
+      "@type": "xsd:string"
+    },
+    "change_type": {
+      "@id": "cl:change_type",
+      "@type": "xsd:string"
+    },
+    "severity": {
+      "@id": "cl:severity",
+      "@type": "xsd:string"
+    },
+    "scope": {
+      "@id": "cl:scope",
+      "@type": "xsd:string"
+    },
+    "path": {
+      "@id": "cl:path",
+      "@type": "xsd:string"
+    },
+    "method": {
+      "@id": "cl:method",
+      "@type": "xsd:string"
+    },
+    "api_id": {
+      "@id": "cl:api_id",
+      "@type": "xsd:string"
+    },
+    "tool": {
+      "@id": "cl:tool",
+      "@type": "xsd:string"
+    },
+    "platform": {
+      "@id": "cl:platform",
+      "@type": "xsd:string"
+    },
+    "channels": {
+      "@id": "cl:channels",
+      "@container": "@set",
+      "@type": "xsd:string"
+    },
+    "related_api_changes": {
+      "@id": "cl:related_api_changes",
+      "@container": "@set",
+      "@type": "@id"
+    },
+    "changelog_entry_id": {
+      "@id": "cl:changelog_entry_id",
+      "@type": "@id"
+    },
+    "deprecation": {
+      "@id": "cl:deprecation"
+    }
+  }
+}

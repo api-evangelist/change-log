@@ -1,0 +1,40 @@
+{
+  "id": "change_subscriptions_endpoint_added",
+  "api_id": "payments-api",
+  "change_type": "added",
+  "severity": "non-breaking",
+  "scope": "endpoint",
+  "path": "/v1/subscriptions",
+  "method": "POST",
+  "from_version": "2026-04-15",
+  "to_version": "2026-05-19",
+  "description": "Added new POST /v1/subscriptions endpoint to create recurring billing subscriptions.",
+  "diff": {
+    "before": null,
+    "after": {
+      "operationId": "createSubscription",
+      "summary": "Create a subscription",
+      "requestBody": {
+        "required": true,
+        "content": {
+          "application/json": {
+            "schema": { "$ref": "#/components/schemas/SubscriptionCreate" }
+          }
+        }
+      },
+      "responses": {
+        "201": {
+          "description": "Subscription created",
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/Subscription" }
+            }
+          }
+        }
+      }
+    }
+  },
+  "tool": "oasdiff",
+  "detected_at": "2026-05-19T14:55:00Z",
+  "changelog_entry_id": "entry_2026_05_19_payments"
+}
