@@ -1,0 +1,24 @@
+title: Change Log
+description: An index and topic collection covering developer changelog publishing,
+  release-notes platforms, and API change-tracking services. Change Log services help
+  product, engineering, and developer-relations teams communicate releases, deprecations,
+  and breaking changes to customers and integrators through structured changelog feeds,
+  in-app widgets, and machine-readable diffs. This collection includes dedicated changelog
+  publishing platforms like LaunchNotes, AnnounceKit, Beamer, and Canny, API specification
+  diffing tools like oasdiff and Optic, and the broader ecosystem of API management
+  and product-update platforms that expose changelog feeds, release notes, and version-tracking
+  capabilities.
+url: https://change-log.apievangelist.com
+collections:
+  api_stories:
+    output: false
+exclude:
+- README.md
+- Gemfile
+- Gemfile.lock
+- Dockerfile
+- examples
+- json-ld
+- json-schema
+- json-structure
+- vocabulary

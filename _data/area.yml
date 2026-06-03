@@ -1,0 +1,201 @@
+meta:
+  name: Change Log
+  description: An index and topic collection covering developer changelog publishing,
+    release-notes platforms, and API change-tracking services. Change Log services
+    help product, engineering, and developer-relations teams communicate releases,
+    deprecations, and breaking changes to customers and integrators through structured
+    changelog feeds, in-app widgets, and machine-readable diffs. This collection includes
+    dedicated changelog publishing platforms like LaunchNotes, AnnounceKit, Beamer,
+    and Canny, API specification diffing tools like oasdiff and Optic, and the broader
+    ecosystem of API management and product-update platforms that expose changelog
+    feeds, release notes, and version-tracking capabilities.
+  tags:
+  - Changelog
+  - Release Notes
+  - API Versioning
+  - Product Updates
+  - Spec Diff
+  - Deprecation
+  portal: https://apievangelist.com
+  github: https://github.com/api-evangelist
+  repo: change-log
+services_tools:
+- name: Aha.io
+  repo: https://github.com/api-evangelist/aha
+  apisio: https://providers.apis.io/providers/aha/
+- name: AnnounceKit
+  repo: https://github.com/api-evangelist/announcekit
+  apisio: https://providers.apis.io/providers/announcekit/
+- name: Apicurio
+  repo: https://github.com/api-evangelist/apicurio
+  apisio: https://providers.apis.io/providers/apicurio/
+- name: Apigee
+  repo: https://github.com/api-evangelist/apigee
+  apisio: https://providers.apis.io/providers/apigee/
+- name: APIMatic
+  repo: https://github.com/api-evangelist/apimatic
+  apisio: https://providers.apis.io/providers/apimatic/
+- name: APIwiz
+  repo: https://github.com/api-evangelist/apiwiz
+  apisio: https://providers.apis.io/providers/apiwiz/
+- name: Axway
+  repo: https://github.com/api-evangelist/axway
+  apisio: https://providers.apis.io/providers/axway/
+- name: Beamer
+  repo: https://github.com/api-evangelist/beamer
+  apisio: https://providers.apis.io/providers/beamer/
+- name: Bump.sh
+  repo: https://github.com/api-evangelist/bump-sh
+  apisio: https://providers.apis.io/providers/bump-sh/
+- name: Canny
+  repo: https://github.com/api-evangelist/canny
+  apisio: https://providers.apis.io/providers/canny/
+- name: CHANGELOG.md
+  repo: https://github.com/api-evangelist/changelog-md
+  apisio: https://providers.apis.io/providers/changelog-md/
+- name: Chameleon
+  repo: https://github.com/api-evangelist/chameleon
+  apisio: https://providers.apis.io/providers/chameleon/
+- name: GitHub
+  repo: https://github.com/api-evangelist/github
+  apisio: https://providers.apis.io/providers/github/
+- name: GitLab
+  repo: https://github.com/api-evangelist/gitlab
+  apisio: https://providers.apis.io/providers/gitlab/
+- name: Kong
+  repo: https://github.com/api-evangelist/kong
+  apisio: https://providers.apis.io/providers/kong/
+- name: LaunchNotes
+  repo: https://github.com/api-evangelist/launchnotes
+  apisio: https://providers.apis.io/providers/launchnotes/
+- name: Linear
+  repo: https://github.com/api-evangelist/linear
+  apisio: https://providers.apis.io/providers/linear/
+- name: Loops
+  repo: https://github.com/api-evangelist/loops
+  apisio: https://providers.apis.io/providers/loops/
+- name: Notion
+  repo: https://github.com/api-evangelist/notion
+  apisio: https://providers.apis.io/providers/notion/
+- name: Oasdiff
+  repo: https://github.com/api-evangelist/oasdiff
+  apisio: https://providers.apis.io/providers/oasdiff/
+- name: Optic
+  repo: https://github.com/api-evangelist/optic
+  apisio: https://providers.apis.io/providers/optic/
+- name: Postman
+  repo: https://github.com/api-evangelist/postman
+  apisio: https://providers.apis.io/providers/postman/
+- name: Productboard
+  repo: https://github.com/api-evangelist/productboard
+  apisio: https://providers.apis.io/providers/productboard/
+- name: Redocly
+  repo: https://github.com/api-evangelist/redocly
+  apisio: https://providers.apis.io/providers/redocly/
+- name: Statuspage
+  repo: https://github.com/api-evangelist/statuspage
+  apisio: https://providers.apis.io/providers/statuspage/
+- name: Stoplight
+  repo: https://github.com/api-evangelist/stoplight
+  apisio: https://providers.apis.io/providers/stoplight/
+- name: SwaggerHub
+  repo: https://github.com/api-evangelist/swaggerhub
+  apisio: https://providers.apis.io/providers/swaggerhub/
+- name: Tyk
+  repo: https://github.com/api-evangelist/tyk
+  apisio: https://providers.apis.io/providers/tyk/
+- name: Userback
+  repo: https://github.com/api-evangelist/userback
+  apisio: https://providers.apis.io/providers/userback/
+- name: Userpilot
+  repo: https://github.com/api-evangelist/userpilot
+  apisio: https://providers.apis.io/providers/userpilot/
+- name: WSO2
+  repo: https://github.com/api-evangelist/wso2
+  apisio: https://providers.apis.io/providers/wso2/
+features:
+- name: Customer-Facing Changelog Publishing
+  description: Dedicated platforms like LaunchNotes, AnnounceKit, and Beamer give
+    product and developer-relations teams structured workflows to publish customer-facing
+    changelog entries, release notes, and deprecation notices.
+- name: In-App Release Widgets
+  description: Tools like Beamer, Chameleon, and Userpilot embed changelog widgets
+    and what-is-new notifications directly inside applications so users discover updates
+    in context.
+- name: API Specification Diffing
+  description: Spec-diff tools like oasdiff and Optic compare OpenAPI definitions
+    across versions to detect breaking and non-breaking changes, generate structured
+    changelogs, and gate releases in CI.
+- name: Release Notes Feeds and Webhooks
+  description: Most changelog platforms expose RSS, Atom, JSON, or webhook feeds of
+    release entries so other systems can react to releases programmatically.
+- name: Roadmap and Feedback Integration
+  description: Platforms like Canny, Productboard, and Aha tie changelog entries back
+    to feedback, requests, and roadmap items so customers see the full lifecycle from
+    idea to ship.
+- name: API Versioning and Deprecation Tracking
+  description: API management platforms like Kong, Tyk, Apigee, and Bump.sh track
+    API versions and surface deprecations through documentation portals and machine-readable
+    feeds.
+- name: Changelog Templates and Conventions
+  description: Conventions like Keep a Changelog provide a stable Markdown structure
+    (Added, Changed, Deprecated, Removed, Fixed, Security) widely adopted across open
+    source and enterprise projects.
+- name: Multi-Channel Release Communication
+  description: Modern changelog platforms distribute the same release entry to email,
+    in-app widgets, RSS, Slack, and developer portals, ensuring every audience sees
+    the update through their preferred channel.
+use_cases:
+- name: Public API Changelog Publishing
+  description: API providers publish customer-facing changelogs of new endpoints,
+    breaking changes, and deprecations on platforms like LaunchNotes or Bump.sh to
+    keep integrators informed.
+- name: Automated Breaking-Change Detection
+  description: Engineering teams run oasdiff or Optic in CI to detect breaking changes
+    between OpenAPI versions and block merges that would silently break consumers.
+- name: In-App Product Update Announcements
+  description: Product teams use Beamer, AnnounceKit, or Chameleon to show in-app
+    changelog widgets that notify end users of new features without leaving the application.
+- name: Customer Feedback to Release Loop
+  description: Teams use Canny or Productboard to collect feedback, prioritize features,
+    and then announce shipped work back to the same customers via a connected changelog.
+- name: Developer Portal Release Notes
+  description: API management platforms like Apigee, Kong, and SwaggerHub publish
+    release notes alongside API documentation so developer portals stay current with
+    each version.
+- name: Open Source Release Documentation
+  description: Open source projects follow the Keep a Changelog convention and pair
+    it with GitHub or GitLab releases to publish human-readable changelogs alongside
+    semantic version tags.
+- name: Deprecation Lifecycle Communication
+  description: API teams use changelog platforms to announce upcoming deprecations,
+    surface them through Deprecation HTTP headers, and track adoption of newer versions.
+- name: Customer-Facing Status and Release Notes
+  description: Incident and status platforms like Statuspage combine system status
+    with release notes so customers see both reliability and feature updates in one
+    place.
+integrations:
+- name: LaunchNotes
+  description: Release communication platform for sharing changelogs, roadmaps, and
+    deprecation notices with structured publishing workflows and a public API.
+- name: AnnounceKit
+  description: Changelog and release-notes platform with in-app widgets, email distribution,
+    and segmented announcements for SaaS products.
+- name: Beamer
+  description: In-app changelog and announcement platform that delivers what-is-new
+    notifications, feedback collection, and NPS surveys via embedded widgets.
+- name: Canny
+  description: Feedback management platform with a built-in changelog that closes
+    the loop between user requests and shipped releases.
+- name: Oasdiff
+  description: Open-source CLI that diffs OpenAPI specifications, detects breaking
+    changes, and emits structured changelogs for CI pipelines.
+- name: Optic
+  description: API change-management platform that captures API behavior, diffs OpenAPI
+    specs, and produces governance-friendly changelogs.
+- name: Bump.sh
+  description: API documentation and change-tracking platform that publishes versioned
+    API docs and diff-based changelogs from OpenAPI and AsyncAPI specs.
+- name: Linear
+  description: Issue tracker with a built-in changelog feature that publishes completed
+    work to public release pages.
