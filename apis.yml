@@ -3,7 +3,7 @@ name: Change Log
 description: >-
   An index and topic collection covering developer changelog publishing, release-notes platforms, and API change-tracking services. Change Log services help product, engineering, and developer-relations teams communicate releases, deprecations, and breaking changes to customers and integrators through structured changelog feeds, in-app widgets, and machine-readable diffs. This collection includes dedicated changelog publishing platforms like LaunchNotes, AnnounceKit, Beamer, and Canny, API specification diffing tools like oasdiff and Optic, and the broader ecosystem of API management and product-update platforms that expose changelog feeds, release notes, and version-tracking capabilities.
 type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
 - Changelog
 - Release Notes
