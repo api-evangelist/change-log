@@ -1,0 +1,31 @@
+related:
+- name: Versioning
+  url: https://versioning.apievangelist.com
+  icon: https://versioning.apievangelist.com/icon.png
+  description: An index and topic collection covering API versioning patterns, schema evolution, and breaking-change
+    detection across the API lifecycle. API versioning communicates change to…
+- name: Deprecation
+  url: https://deprecation.apievangelist.com
+  icon: https://deprecation.apievangelist.com/icon.png
+  description: API deprecation, sunset headers, end-of-life management, and API retirement practices,
+    including RFC 8594 Sunset, the Deprecation header, OpenAPI deprecation flags, and consumer…
+- name: Logging
+  url: https://logging.apievangelist.com
+  icon: https://logging.apievangelist.com/icon.png
+  description: An index and topic collection covering log ingestion, log search, log aggregation, and
+    log pipeline services. Logging platforms collect event records from applications,…
+- name: Road Map
+  url: https://road-map.apievangelist.com
+  icon: https://road-map.apievangelist.com/icon.png
+  description: An index and topic collection covering public product road map publishing, feature voting,
+    customer feedback aggregation, and product discovery surfaces. Public road map platforms…
+- name: Regulation
+  url: https://regulation.apievangelist.com
+  icon: https://regulation.apievangelist.com/icon.png
+  description: Regulation encompasses the rules, laws, and standards established by governments, agencies,
+    and standards bodies that govern how businesses and individuals must operate. In the…
+- name: Transparency
+  url: https://transparency.apievangelist.com
+  icon: https://transparency.apievangelist.com/icon.png
+  description: An index and topic collection covering public-facing transparency surfaces across the API
+    and platform ecosystem. Transparency in this context refers to the mechanisms platforms…
