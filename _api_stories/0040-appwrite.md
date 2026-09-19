@@ -1,7 +1,7 @@
 ---
-title: What's new in the MCP 2026-07-28 specification
-link: https://appwrite.io/blog/post/mcp-goes-stateless-in-the-2026-07-28-specification
-published: '2026-07-30'
+title: 'July product update: Remote MCP server, Projects API and more'
+link: https://appwrite.io/blog/post/july-product-update-remote-mcp-server-projects-api-and-more
+published: '2026-08-05'
 provider: appwrite
 repo: https://github.com/api-evangelist/appwrite
 domain: appwrite.io
