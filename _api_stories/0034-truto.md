@@ -1,6 +1,6 @@
 ---
-title: 'How to Connect an AI Agent to Brex Expense Data via MCP: A Production Quickstart'
-link: https://truto.one/blog/how-to-connect-an-ai-agent-to-brex-expense-data-via-mcp-a-production-quickstart/
+title: 'Build a Production Strapi MCP Server for ChatGPT: Media & Content'
+link: https://truto.one/blog/build-a-production-strapi-mcp-server-for-chatgpt-media-content/
 published: '2026-08-19'
 provider: truto
 repo: https://github.com/api-evangelist/truto
