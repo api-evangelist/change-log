@@ -1,125 +1,97 @@
-# Change Log (change-log)
+# Change Log
+
+<!-- API-EVANGELIST-PROVENANCE:BEGIN -->
+> ### About this repository
+>
+> **This is not our API.** This repository is an independent, third-party profile of a company's
+> **publicly available** API surface, maintained by [API Evangelist](https://apievangelist.com).
+> API Evangelist does not operate, host, resell, or support this company's APIs, and is not
+> affiliated with or endorsed by the company unless stated on the profile.
+>
+> **Where the information came from.** Everything here is assembled from material a member of the
+> public can reach with a browser and no credentials — the company's own website, developer portal
+> and documentation, the specifications it publishes for public use (OpenAPI, AsyncAPI, JSON Schema,
+> `apis.json`, `llms.txt` and similar), its public repositories, and its public status, pricing and
+> changelog pages. **Nothing here is obtained by breaching a system, defeating an access control, or
+> using credentials of any kind.**
+>
+> **The rating is an independent assessment.** The Kin Score and Agent Readiness rating are
+> independently calculated scores of a company's *public* API artifacts, produced by API Evangelist
+> against a published rubric. They are not certifications, endorsements, security assessments, or
+> audits, and they score published artifacts — not the quality, safety, or security of the software.
+>
+> **Corrections, re-scores, and removal are free.** No partnership, contract, or purchase is
+> required, and you do not need to justify the request.
+>
+> - **Something wrong?** Open an issue on this repository, or email
+>   [info@apievangelist.com](mailto:info@apievangelist.com).
+> - **Published something new?** Ask for a re-score and we will re-run the rating.
+> - **Want the listing taken down?** Say so and we will honor it. The profile is reduced to your
+>   company name, a factual description, and a link to your own site, and the company is recorded as
+>   **unrated** — never scored zero for having asked.
+>
+> **Response times.** Acknowledgement within **one business day**; removal or restriction within
+> **two business days**; corrections and re-scores within **five business days**.
+>
+> **Not from the company, and here with a question?** You are welcome here — we would rather be the
+> front line and point you the right way than have a good report go nowhere. What this repository
+> can answer is narrow, though, so it is worth knowing who you are actually looking for:
+>
+> - **A question about how the API works, an account, billing, or a bug in the service** — that is
+>   the company's own support, not us. We profile this API; we do not operate it and cannot see
+>   your account.
+> - **A bug in an open-source project we only catalog** — file it on that project's own repository.
+>   This has happened with a real and correct bug report that reached us instead of the people who
+>   could fix it, which helped nobody.
+> - **Anything about this listing itself** — the description, the tags, the rating, a missing or
+>   wrong artifact — is ours. Open an issue here.
+> - **Not sure, or something general about API Evangelist or APIs.io** — open an issue on the
+>   [APIs.io Inbox](https://github.com/api-search/inbox) and we will route it.
+>
+> **This repository contains no software, and we will never ask you to download anything.** There is
+> no build, release, installer, or binary here — only text and machine-readable API descriptions, so
+> there is nothing here that can be "corrupt" or need "repairing". Any issue, comment, or email
+> claiming otherwise and offering a download link is not from us and is hostile. Do not follow the
+> link; it is a lure. Report it to GitHub and, if you like, tell us at
+> [info@apievangelist.com](mailto:info@apievangelist.com) so we can take it down.
+>
+> **On a security or compliance team?** Email
+> [info@apievangelist.com](mailto:info@apievangelist.com) with *security* in the subject line and
+> you will get a person, not a form. We will tell you exactly which public URLs this profile was
+> built from so your team can see the same surface we did, and we will take the listing down on
+> request while you work through it.
+>
+> Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
+<!-- API-EVANGELIST-PROVENANCE:END -->
+
 An index and topic collection covering developer changelog publishing, release-notes platforms, and API change-tracking services. Change Log services help product, engineering, and developer-relations teams communicate releases, deprecations, and breaking changes to customers and integrators through structured changelog feeds, in-app widgets, and machine-readable diffs. This collection includes dedicated changelog publishing platforms like LaunchNotes, AnnounceKit, Beamer, and Canny, API specification diffing tools like oasdiff and Optic, and the broader ecosystem of API management and product-update platforms that expose changelog feeds, release notes, and version-tracking capabilities.
 
-**URL:** [https://apievangelist.com](https://apievangelist.com)
+**Areas:** Changelog · Release Notes · API Versioning · Product Updates · Spec Diff · Deprecation
 
-## Tags:
+## Change Log on APIs.io
 
- - Changelog, Release Notes, API Versioning, Product Updates, Spec Diff, Deprecation
+Everything profiled for Change Log is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/change-log/](https://apis.io/providers/change-log/)** — or go straight to one of the APIs or properties below.
 
-## Timestamps
+## Where to find this API
 
-- **Created:** 2026-05-19
-- **Modified:** 2026-05-19
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-## Common Properties
+- [GitHub](https://github.com/api-evangelist)
 
-- [Portal](https://apievangelist.com)
-- [GitHubOrganization](https://github.com/api-evangelist)
-- [JSONSchema - Changelog Entry Schema](https://raw.githubusercontent.com/api-evangelist/change-log/refs/heads/main/json-schema/change-log-changelog-entry-schema.json)
-- [JSONSchema - API Change Schema](https://raw.githubusercontent.com/api-evangelist/change-log/refs/heads/main/json-schema/change-log-api-change-schema.json)
-- [JSON-LD](https://raw.githubusercontent.com/api-evangelist/change-log/refs/heads/main/json-ld/change-log-context.jsonld)
-- [Vocabulary](https://raw.githubusercontent.com/api-evangelist/change-log/refs/heads/main/vocabulary/change-log-vocabulary.yaml)
+## API Evangelist rating
 
-## Features
+**Unrated** — no public website could be reached for this company, so there was almost nothing to measure and nothing a reader could check.
 
-| Name | Description |
-|------|-------------|
-| Customer-Facing Changelog Publishing | Dedicated platforms like LaunchNotes, AnnounceKit, and Beamer give product and developer-relations teams structured workflows to publish customer-facing changelog entries, release notes, and deprecation notices. |
-| In-App Release Widgets | Tools like Beamer, Chameleon, and Userpilot embed changelog widgets and what-is-new notifications directly inside applications so users discover updates in context. |
-| API Specification Diffing | Spec-diff tools like oasdiff and Optic compare OpenAPI definitions across versions to detect breaking and non-breaking changes, generate structured changelogs, and gate releases in CI. |
-| Release Notes Feeds and Webhooks | Most changelog platforms expose RSS, Atom, JSON, or webhook feeds of release entries so other systems can react to releases programmatically. |
-| Roadmap and Feedback Integration | Platforms like Canny, Productboard, and Aha tie changelog entries back to feedback, requests, and roadmap items so customers see the full lifecycle from idea to ship. |
-| API Versioning and Deprecation Tracking | API management platforms like Kong, Tyk, Apigee, and Bump.sh track API versions and surface deprecations through documentation portals and machine-readable feeds. |
-| Changelog Templates and Conventions | Conventions like Keep a Changelog provide a stable Markdown structure (Added, Changed, Deprecated, Removed, Fixed, Security) widely adopted across open source and enterprise projects. |
-| Multi-Channel Release Communication | Modern changelog platforms distribute the same release entry to email, in-app widgets, RSS, Slack, and developer portals, ensuring every audience sees the update through their preferred channel. |
+This is not a score of zero. No rating is published for this company. If that is wrong because something public exists that we missed, say so on this repository or email [info@apievangelist.com](mailto:info@apievangelist.com) and it will be re-run — free, and no justification needed.
 
-## Use Cases
+## How this profile is made
 
-| Name | Description |
-|------|-------------|
-| Public API Changelog Publishing | API providers publish customer-facing changelogs of new endpoints, breaking changes, and deprecations on platforms like LaunchNotes or Bump.sh. |
-| Automated Breaking-Change Detection | Engineering teams run oasdiff or Optic in CI to detect breaking changes between OpenAPI versions and block merges that would silently break consumers. |
-| In-App Product Update Announcements | Product teams use Beamer, AnnounceKit, or Chameleon to show in-app changelog widgets that notify end users of new features without leaving the application. |
-| Customer Feedback to Release Loop | Teams use Canny or Productboard to collect feedback, prioritize features, and then announce shipped work back to the same customers via a connected changelog. |
-| Developer Portal Release Notes | API management platforms like Apigee, Kong, and SwaggerHub publish release notes alongside API documentation so developer portals stay current with each version. |
-| Open Source Release Documentation | Open source projects follow the Keep a Changelog convention and pair it with GitHub or GitLab releases to publish human-readable changelogs alongside semantic version tags. |
-| Deprecation Lifecycle Communication | API teams use changelog platforms to announce upcoming deprecations, surface them through Deprecation HTTP headers, and track adoption of newer versions. |
-| Customer-Facing Status and Release Notes | Incident and status platforms like Statuspage combine system status with release notes so customers see both reliability and feature updates in one place. |
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
 
-## Integrations
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Change Log: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
 
-| Name | Description |
-|------|-------------|
-| LaunchNotes | Release communication platform for sharing changelogs, roadmaps, and deprecation notices with structured publishing workflows and a public API. |
-| AnnounceKit | Changelog and release-notes platform with in-app widgets, email distribution, and segmented announcements for SaaS products. |
-| Beamer | In-app changelog and announcement platform that delivers what-is-new notifications, feedback collection, and NPS surveys via embedded widgets. |
-| Canny | Feedback management platform with a built-in changelog that closes the loop between user requests and shipped releases. |
-| Oasdiff | Open-source CLI that diffs OpenAPI specifications, detects breaking changes, and emits structured changelogs for CI pipelines. |
-| Optic | API change-management platform that captures API behavior, diffs OpenAPI specs, and produces governance-friendly changelogs. |
-| Bump.sh | API documentation and change-tracking platform that publishes versioned API docs and diff-based changelogs from OpenAPI and AsyncAPI specs. |
-| Linear | Issue tracker with a built-in changelog feature that publishes completed work to public release pages. |
+## Open an issue
 
-## Artifacts
-
-Machine-readable API specifications organized by format.
-
-### JSON Schema
-
-- [Changelog Entry Schema](json-schema/change-log-changelog-entry-schema.json)
-- [API Change Schema](json-schema/change-log-api-change-schema.json)
-
-### JSON Structure
-
-- [Changelog Entry Structure](json-structure/change-log-changelog-entry-structure.json)
-- [API Change Structure](json-structure/change-log-api-change-structure.json)
-
-### JSON-LD
-
-- [Change Log Context](json-ld/change-log-context.jsonld)
-
-## Vocabulary
-
-- [Change Log Vocabulary](vocabulary/change-log-vocabulary.yaml) — Unified taxonomy mapping resources, actions, workflows, and personas across changelog publishing platforms, API spec-diff tools, and release-communication services
-
-## Network
-
-This index references the following changelog publishing, release-notes, and API change-tracking repositories:
-
-- [Aha.io](https://github.com/api-evangelist/aha)
-- [AnnounceKit](https://github.com/api-evangelist/announcekit)
-- [Apicurio](https://github.com/api-evangelist/apicurio)
-- [Apigee](https://github.com/api-evangelist/apigee)
-- [APIMatic](https://github.com/api-evangelist/apimatic)
-- [APIwiz](https://github.com/api-evangelist/apiwiz)
-- [Axway](https://github.com/api-evangelist/axway)
-- [Beamer](https://github.com/api-evangelist/beamer)
-- [Bump.sh](https://github.com/api-evangelist/bump-sh)
-- [Canny](https://github.com/api-evangelist/canny)
-- [CHANGELOG.md](https://github.com/api-evangelist/changelog-md)
-- [Chameleon](https://github.com/api-evangelist/chameleon)
-- [GitHub](https://github.com/api-evangelist/github)
-- [GitLab](https://github.com/api-evangelist/gitlab)
-- [Kong](https://github.com/api-evangelist/kong)
-- [LaunchNotes](https://github.com/api-evangelist/launchnotes)
-- [Linear](https://github.com/api-evangelist/linear)
-- [Loops](https://github.com/api-evangelist/loops)
-- [Notion](https://github.com/api-evangelist/notion)
-- [Oasdiff](https://github.com/api-evangelist/oasdiff)
-- [Optic](https://github.com/api-evangelist/optic)
-- [Postman](https://github.com/api-evangelist/postman)
-- [Productboard](https://github.com/api-evangelist/productboard)
-- [Redocly](https://github.com/api-evangelist/redocly)
-- [Statuspage](https://github.com/api-evangelist/statuspage)
-- [Stoplight](https://github.com/api-evangelist/stoplight)
-- [SwaggerHub](https://github.com/api-evangelist/swaggerhub)
-- [Tyk](https://github.com/api-evangelist/tyk)
-- [Userback](https://github.com/api-evangelist/userback)
-- [Userpilot](https://github.com/api-evangelist/userpilot)
-- [WSO2](https://github.com/api-evangelist/wso2)
-
-## Maintainers
-
-**FN:** Kin Lane
-
-**Email:** kin@apievangelist.com
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/change-log/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
