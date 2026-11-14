@@ -1,7 +1,7 @@
 ---
-title: OpenAPI Overlays Let One Products API Speak Four Languages
-link: https://apievangelist.com/2026/06/23/openapi-overlays-let-one-products-api-speak-four-languages/
-published: '2026-06-23'
+title: OpenAPI Overlays for Translating and Localizing One Canonical Spec
+link: http://apievangelist.com/2026/07/09/openapi-overlays-for-translating-and-localizing/
+published: '2026-07-09'
 provider: api-evangelist
 repo: https://github.com/api-evangelist/api-evangelist
 domain: apievangelist.com
